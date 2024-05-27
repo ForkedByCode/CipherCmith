@@ -6,29 +6,32 @@ function Form() {
     <>
       <div className="container w-25 p-0">
         <form>
-          <div className="mb-3">
-            <label for="passwordLength" className="form-label">
+          <div className="mb-3 row mx-auto">
+            <label
+              for="passwordLength"
+              className="form-label col-sm-12 col-lg-6 my-auto p-0"
+            >
               Password Length
             </label>
             <input
               type="number"
-              className="form-control"
+              className="form-control col"
               id="passwordLength"
               aria-describedby="passwordLength"
             />
-            {/* <div id="passwordLength" className="form-text">
-              We'll never share your email with anyone else.
-            </div> */}
           </div>
           {/* checkbox */}
 
-          <div className="mb-3">
-            <label for="generatedPassword" className="form-label">
+          <div className="mb-3 row mx-auto">
+            <label
+              for="generatedPassword"
+              className="form-label col-sm-12 col-lg-6 my-auto p-0"
+            >
               Password
             </label>
             <input
               type="text"
-              className="form-control"
+              className="form-control col"
               id="generatedPassword"
             />
           </div>
