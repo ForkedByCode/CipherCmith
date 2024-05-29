@@ -20,7 +20,10 @@ function Form() {
               aria-describedby="passwordLength"
             />
           </div>
-          {/* checkbox */}
+
+          <section className="mb-3">
+            <Checkbox />
+          </section>
 
           <div className="mb-3 row mx-auto">
             <label
