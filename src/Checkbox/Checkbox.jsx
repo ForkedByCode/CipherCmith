@@ -1,49 +1,17 @@
-function Checkbox() {
+function Checkbox({ defaultSelection, buttonId, children }) {
   return (
     <>
-      <div
-        className="btn-group d-flex flex-column"
-        role="group"
-        aria-label="Basic checkbox toggle button group"
-      >
+      <div className="form-check form-switch m-1">
         <input
           type="checkbox"
-          className="btn-check"
-          id="btncheck1"
-          autocomplete="off"
+          role="switch"
+          className="form-check-input"
+          id={buttonId}
+          autoComplete="off"
+          defaultChecked={defaultSelection}
         />
-        <label className="btn btn-outline-primary" for="btncheck1">
-          Uppercase
-        </label>
-
-        <input
-          type="checkbox"
-          className="btn-check"
-          id="btncheck2"
-          autocomplete="off"
-        />
-        <label className="btn btn-outline-primary" for="btncheck2">
-          Lowercase
-        </label>
-
-        <input
-          type="checkbox"
-          className="btn-check"
-          id="btncheck3"
-          autocomplete="off"
-        />
-        <label className="btn btn-outline-primary" for="btncheck3">
-          Symbols
-        </label>
-
-        <input
-          type="checkbox"
-          className="btn-check"
-          id="btncheck4"
-          autocomplete="off"
-        />
-        <label className="btn btn-outline-primary" for="btncheck4">
-          Numbers
+        <label className="form-check-label" htmlFor={buttonId}>
+          {children}
         </label>
       </div>
     </>
